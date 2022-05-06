@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(48, 48, 48);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+header div{
+  display: inline;
+}
+
+/*CONTENT*/
+.biggoogle{
+  padding: 10px;
+  width: 30em;
+}
+
+section{
+  display: inline-flex;
+  background-color: transparent ;
+  border: 1px #000000 solid;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+  section div {
+    margin: 2px;
+  }
+  
+    #lupa {
+      width: 1em;
+      margin: 10px 2.5px 10px 10px ;
+    }
+
+    #gSearch{
+      background-color: transparent;
+      border: none;
+      font-size: 15px;
+      width: 300px;
+      margin: 10px 5px 10px 2.5px;
+    }
+
+/*FOOTER*/
+footer{
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  background-color: white;
+}

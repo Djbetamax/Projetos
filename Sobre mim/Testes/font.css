@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+ul, li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+button {
+  padding: 2.5px;
+  transition: all 1s; 
+}
+
+button:hover {
+  background-color: grey;
+  color:white;
+}

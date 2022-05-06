@@ -1,0 +1,14 @@
+body {
+  background-color: grey; /* temporário pra visão */
+}
+
+.navbar-brand {
+  font-family: 'Grenze Gotisch', cursive;
+  font-weight: 900;
+}
+
+.navbar-nav {
+  font-family: 'Megrim', cursive;
+  font-size: larger;
+  text-transform: uppercase;
+}

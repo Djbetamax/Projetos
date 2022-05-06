@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display: block;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.021);
+}
+
+div a{
+  text-decoration: none;
+}
+
+div#contentblock {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  margin: 25px;
+}
+
+img{
+  margin-top: 25px;
+  width: 12em;
+  height: 6em;
+}
+
+.bigP {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 40px 10px;
+  color: #8e8e8eb4;
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+}
+
+.facebook{
+  color:  white;
+  background-color: #0095f6;
+  border: 0 solid transparent;
+  margin: 10px;
+}
+
+.or_{
+  margin-bottom: 5px;
+}
+
+input{
+  height: 36px;
+  width: 275px;
+  margin: 1px;
+  margin-top: 2.5px;
+  padding: 7px 0 5px 4px;
+  border: 1px solid;  
+  border-radius: 4px;
+  background-color: #8e8e8e10;
+}
+
+input#button{
+  margin-top: 7.5px;
+  color: white;
+  background-color: #0094f6c0;
+}
+
+.terms {
+  display: inline-block;
+  text-align: center;
+  width: 275px;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 10px 40px;
+  color: #8e8e8eb4;
+}
+
+span#strong {
+  color: rgba(0, 0, 0, 0.753);
+}
+
+div#conect{
+  display: block;
+  border: 1px solid ;
+  width: 360px;
+  height: 60px;
+  padding: 20px ;
+  margin: auto;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.conect_blue{
+  color: #0095f6;
+}
+
+.download{
+  margin: 10px;
+  padding: 10px;
+}
+
+#download{
+  margin: 0;
+  height:  40px;
+  width: 150px;
+}
+
+
+footer{
+  font-size: 12px;
+  color: #8e8e8eb4;
+  margin: 30px;
+  padding: 5px;
+}
+footer a {
+  color: #8e8e8eb4;
+  margin: 5px;
+}
+
+footer div{
+  margin: 15px;
+}
+
+span#copy{
+  margin: 10px;
+}
