@@ -178,7 +178,7 @@ header .menu {
  justify-content: space-between;
 }
 
-.item.plano {
+.item-plano {
  flex: 1;
  border: 5px solid #122A57;
  margin-right: 20px;
