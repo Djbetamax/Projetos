@@ -6,8 +6,109 @@
   list-style: none;
 }
 
-body{
+body{ 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  background-color: hsla(0, 0%, 0%, 0.021);
+  color: #262626c6;
+  font-size: 14px;
+  line-height: 18px;
 }
 
+.instagram-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  padding: 25px;
+  width: 60vh;
+  margin-top: 10px;
+}
+
+.instagram-logo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.instagram-logo img {
+  width: 100%;
+  max-width: 10rem;
+}
+
+
+
+
+
+.terms-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.terms-policy {
+  color: #2626266f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.terms-policy span{
+  font-weight: 700;
+}
+
+.connect-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+}
+
+.connect-account a {
+  color: #0095f6;
+  font-weight: 400;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3rem;
+  color: #262626;
+ }
+ 
+ .download {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 1rem;
+ }
+ 
+ .app-download {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 5px;
+  background-size: cover;
+ }
+ 
+ .app-download:nth-child(1) {
+  background-image: url('https://www.instagram.com/static/images/appstore-install-badges/badge_ios_portuguese-brazilian-pt_br.png/68006a2bb372.png');
+ }
+ 
+ .app-download:nth-child(2) {
+  background-image: url('https://www.instagram.com/static/images/appstore-install-badges/badge_android_portuguese_brazilian-pt_BR.png/2f2a0c05b2f3.png');
+ }
