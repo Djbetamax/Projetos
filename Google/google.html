@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--colocar o icone do google por aqui-->
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" type="image/x-icon">
   <title>Google</title>
-  <link rel="stylesheet" href="google.css" />
+    <link rel="stylesheet" href="google.css"/>
 </head>
 <body>
-  <header>
-    <div>
-      <div>
-        <a href="#">Gmail</a>
-        <a href="#">Imagens</a>
+  <main class="google-thang">
+    <header class="nav">
+      <div class="nav-links">
+        <a href="#" class="link">Gmail</a>
+        <a href="#" class="link">Imagens</a>
+        <div class="app-launcher">
+          <span class=""></span> <!--9 dots icon-->
+        </div>
+        <a href="#" class="btn-link">Fazer Login</a>
       </div>
-      <div>
-      <button>
-        <a
-          href="https://accounts.google.com/signin/v2/identifier?hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Fazer
-          login</a>
-      </button>
+    </header>
+
+    <section class="form-google">
+      <div class="google-logo">
+        <img src="img/google-logo.png" alt="Google logo " class="logo">
       </div>
-    </div>
-  </header>
-  <main>
-    <div>
-      <img class="biggoogle" src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-1.png"
-        alt="big Google letters" />
-    </div>
-    <section>
-      <div>
-        <img id="lupa" src="https://svgsilh.com/svg_v2/1093183.svg" alt="lupa" />
+      <div class="form-group">
+        <div class="search-bar">
+          <img src="img/google-search.png" alt="Search icon" class="search-icon">
+          <form action="search">
+            <input type="text" name="search">
+            <div class="form-btn">
+              <button type="submit" name="submit">Pesquisa Google</button>
+              <button type="submit" name="submit">Estou com sorte</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div>
-        <form action="https://www.google.com/search">
-          <input type="text" name="q" id="gSearch" />
-          <div id="space">
     </section>
-    <div>
-      <input class="searchon" type="submit" value="Pesquisar no Google" />
-    </div>
-    </form>
+
+    <footer class="footer">
+      <div class="country">
+        Brasil
+      </div>
+      <div class="footer-info">
+        <div class="left-side">
+          <a href="" class="link">Sobre</a>
+          <a href="" class="link">Publicidade</a>
+          <a href="" class="link">Negócios</a>
+          <a href="" class="link">Como funciona a Pesquisa</a>
+        </div>
+        <span class="divider"></span>
+        <div class="right-side">
+          <a href="" class="link">Privacidade</a>
+          <a href="" class="link">Termos</a>
+          <a href="" class="link">Configurações</a>
+        </div>
+      </div>
+    </footer>
   </main>
-  <footer>
-    <div>Brasil</div>
-    <hr />
-    <div>
-      <div>
-        <a href="#">Sobre</a>
-        <a href="#">Publicidade</a>
-        <a href="#">Negócios</a>
-        <a href="#">Como funciona a Pesquisa</a>
-      </div>
-      <div class="spacebtween"></div>
-      <div>
-        <a href="#">Privacidade</a>
-        <a href="#">Termos</a>
-        <a href="#">Configurações</a>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>
