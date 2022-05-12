@@ -9,6 +9,7 @@
 body{ 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   color: #262626c6;
+  background-color: #26262605;
   font-size: 14px;
   line-height: 18px;
 }
@@ -19,7 +20,7 @@ body{
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   margin-top: 30px;
 }
 
@@ -28,7 +29,8 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid;
+  border: 1px solid #2626263a;
+  background-color: white;
   padding: 25px;
   width: 60vh;
   margin-top: 10px;
@@ -43,17 +45,125 @@ body{
 .instagram-logo img {
   width: 100%;
   max-width: 10rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
+.cad-text {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #26262678;
+}
 
+.facebook-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #0095f6;
+  width: 16rem;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
 
+.facebook-icon {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
 
+.facebook-icon img {
+  width: 100%;
+  max-width: 1rem;
+}
+
+.facebook-option a {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.divider p {
+  color: #2626268c;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.line {
+  width: 6.7rem;
+  height: 1px;
+  border: 0px;
+  background-color: #26262630;
+  margin: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-register input{
+  display: flex;
+  border: 1px solid #26262630;
+  border-radius: 2.5px;
+  background-color: #26262605;
+  font-size: 12px;
+  height: 2.5rem;
+  width: 16rem;
+  margin: 3px;
+  padding: 5px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #0095f6;
+  border-radius: 5px;
+  margin: 10px;
+  width: 16rem;
+  padding: 5px;
+}
+
+.submit-button {
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+}
 
 .terms-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 10px;
 }
 
@@ -112,3 +222,41 @@ body{
  .app-download:nth-child(2) {
   background-image: url('https://www.instagram.com/static/images/appstore-install-badges/badge_android_portuguese_brazilian-pt_BR.png/2f2a0c05b2f3.png');
  }
+
+ .footer-container {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30px;
+ }
+
+ .row-1 {
+  display: flex;
+  justify-items: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+ }
+
+ .row-1 a{
+  color: #2626268c;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.row-2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lang-option, .copy{
+  color: #2626268c;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+/*@Media Queries */
+
