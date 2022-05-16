@@ -8,15 +8,14 @@
 
 body {
   background-color: grey; /* temporário pra visão */
+  font-family: 'Megrim', cursive;
 }
 
-.navbar-brand {
-  font-family: 'Grenze Gotisch', cursive;
-  font-weight: 900;
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-nav {
-  font-family: 'Megrim', cursive;
   font-size: larger;
   text-transform: uppercase;
 }
