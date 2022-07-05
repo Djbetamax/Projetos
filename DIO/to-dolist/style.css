@@ -1,0 +1,69 @@
+
+
+.to-doWrapper {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+a, li, ul {
+ text-decoration: none;
+ list-style: none;
+}
+
+li {
+ position: relative;
+ margin-right: 8rem;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+}
+
+#checkbox {
+ position: relative;
+ top: 0;
+ left: 0;
+ width: 1rem;
+ height: 1rem;
+ border: 1px solid #ccc;
+ background-color: #fff;
+}
+
+.remove {
+ border: 0;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.remove:hover {
+ background-color: rgba(0, 0, 0, 0.103);
+}
+
+.close {
+ position: relative;
+ height: 10px; /* this can be anything */
+ width: 10px;  /* ...but maintain 1:1 aspect ratio */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.close::before,
+.close::after {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 1px; /* cross thickness */
+ background-color: red;
+}
+
+.close::before {
+ transform: rotate(45deg);
+}
+
+.close::after {
+ transform: rotate(-45deg);
+}
