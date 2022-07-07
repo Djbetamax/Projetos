@@ -1,9 +1,0 @@
-#Untracked files:
-
-**/node_modules
-**/dist
-
-#Tracked files:
-#**/src
-#**/script.ts
-#**/tsconfig.json
