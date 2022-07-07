@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import useGithub from '../../hooks/github-hooks';
 import RepositoryItem from '../repository-item';
 import * as S from "./styled";
 
 const Repositories = () => {
-
-  const { githubState, getUserRepos, getUserStarred} = useGithub ();
+  const { githubState, getUserRepos, getUserStarred } = useGithub();
   const [hasUserForSearchrepos, sethasUserForSearchrepos] = useState(false);
 
   useEffect(() => {
@@ -14,6 +13,8 @@ const Repositories = () => {
       getUserStarred(githubState.user.login);;
     } 
     sethasUserForSearchrepos(!!githubState.repositories)
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [githubState.user.login]);
   
   return (
@@ -32,24 +33,29 @@ const Repositories = () => {
               key={item.id}
               name={item.name}
               linkToRepo={item.html_url}
-              fullName={item.full_name} />))
-              }
-            </S.WrapperList>
+              fullName={item.full_name}
+            />
+          ))}
+          </S.WrapperList>
         </S.WrapperTabPanel>
         <S.WrapperTabPanel>
           <S.WrapperList>
             {githubState.repositories.map((item) => (
-            <RepositoryItem 
-            key={item.id}
-            name={item.name}
-            linkToRepo={item.html_url}
-            fullName={item.full_name} />))}
+              <RepositoryItem 
+              key={item.id}
+              name={item.name}
+              linkToRepo={item.html_url}
+              fullName={item.full_name}
+              />
+            ))}
           </S.WrapperList>
         </S.WrapperTabPanel>
       </S.WrapperTabs>
-      ) : <></>}
+      ) : (
+      <></>
+    )}
     </>
-  )
-}
+  );
+};
 
-export default Repositories
+export default Repositories;

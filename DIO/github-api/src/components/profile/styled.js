@@ -10,11 +10,11 @@ export const WrapperInfoUser = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: auto;
+  height: 200px;
   margin-left: 8px
 
   h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
   }
 

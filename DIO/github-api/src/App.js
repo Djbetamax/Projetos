@@ -8,7 +8,6 @@ import NoSearch from './components/no-search';
 function App() {
   const { githubState } = useGithub();
   return (
-
     <Layout> 
       {githubState.hasUser ? (
       <>
@@ -17,13 +16,12 @@ function App() {
           <Profile />
           <Repositories />
         </>
-          ) }
+          )}
       </> ) : (
         <NoSearch />)
       }
-       
     </Layout>
   );
-}
+};
 
 export default App;

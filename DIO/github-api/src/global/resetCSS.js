@@ -303,5 +303,5 @@ const ResetCSS = createGlobalStyle`
     }
 
   }`
-
-export default ResetCSS
+  
+export default ResetCSS;

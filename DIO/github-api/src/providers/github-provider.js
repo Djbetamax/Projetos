@@ -2,10 +2,11 @@ import React, { createContext, useCallback, useState } from 'react'
 import api from '../services/api'
 
 export const GithubContext = createContext({
+  loading: false,
   user: {},
   repositories: [],
   starred: []
-})
+});
 
 function GithubProvider({ children }) {
   const [githubState, setGithubState] = useState ({
@@ -34,39 +35,40 @@ function getUser ( username ) {
     ...prevState, loading: !prevState.loading,
   }));
 
-  api.get(`users/${username}`).then(({ data }) => {
-    setGithubState((prevState) => ({...prevState, hasUser: true, user: {
-      id: data.url.id,
-      avatar: data.avatar_url,
-      login: data.login,
-      name: data.name,
-      html_url: data.html_url,
-      blog: data.blog,
-      company: data.company,
-      location: data.location,
-      followers: data.followers,
-      following: data.following,
-      publick_gists:data.publick_gists,
-      publick_repos: data.publick_repos
-    },
-  }));
-  }).finally( () => {
-    setGithubState((prevState) => ({
-      ...prevState, loading: !prevState.loading,
-    }));  
-  })
-};
+  api
+    .get(`users/${username}`).then(({ data }) => {
+      setGithubState((prevState) => ({...prevState, hasUser: true, user: {
+        id: data.url.id,
+        avatar: data.avatar_url,
+        login: data.login,
+        name: data.name,
+        html_url: data.html_url,
+        blog: data.blog,
+        company: data.company,
+        location: data.location,
+        followers: data.followers,
+        following: data.following,
+        publick_gists:data.publick_gists,
+        publick_repos: data.publick_repos
+      },
+    }));
+    }).finally( () => {
+      setGithubState((prevState) => ({
+        ...prevState, loading: !prevState.loading,
+      }));  
+    })
+  };
 
   function getUserRepos (username) {
     api.get(`users/${username}/repos`).then(({ data }) => {
-      setGithubState((prevState) => ({...prevState, repositories: [data],
+      setGithubState((prevState) => ({...prevState, repositories: data,
       }));
     })
   };
 
   function getUserStarred (username) {
     api.get(`users/${username}/starred`).then(({ data }) => {
-      setGithubState((prevState) => ({...prevState, starred: [data],
+      setGithubState((prevState) => ({...prevState, starred: data,
       }));
     })
   };
@@ -85,4 +87,4 @@ function getUser ( username ) {
   );
 };
 
-export default GithubProvider();
+export default GithubProvider;

@@ -6,9 +6,11 @@ const RepositoryItem = ({ name, linkToRepo, fullname }) => {
     <S.Wrapper>
       <S.WrapperTitle>{name}</S.WrapperTitle>
       <S.WrapperFullname>full name:</S.WrapperFullname>
-      <S.WrapperLink href={linkToRepo} target="_blank" rel='noopener noreferrer'>{fullname}</S.WrapperLink>
+      <S.WrapperLink href={linkToRepo} target="_blank" rel='noopener noreferrer'>
+        {fullname}
+      </S.WrapperLink>
     </S.Wrapper>
-  )
+  );
 };
 
-export default RepositoryItem
+export default RepositoryItem;
