@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-body{ 
+body { 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   color: #262626c6;
   background-color: #26262605;
@@ -29,7 +29,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #2626263a;
+  border: 1px solid #2626261d;
   background-color: white;
   padding: 25px;
   width: 60vh;
@@ -44,7 +44,7 @@ body{
 
 .instagram-logo img {
   width: 100%;
-  max-width: 10rem;
+  max-width: 14rem;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -54,7 +54,7 @@ body{
   justify-items: center;
   align-items: center;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 650;
   color: #26262678;
 }
 
@@ -65,9 +65,9 @@ body{
   text-align: center;
   justify-content: center;
   background-color: #0095f6;
-  width: 16rem;
-  height: 2rem;
-  border-radius: 5px;
+  width: 22rem;
+  height: 2.5rem;
+  border-radius: 2.5px;
   padding: 10px;
   margin: 15px;
 }
@@ -104,12 +104,12 @@ body{
 .divider p {
   color: #2626268c;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .line {
-  width: 6.7rem;
+  width: 9.25rem;
   height: 1px;
   border: 0px;
   background-color: #26262630;
@@ -129,13 +129,12 @@ body{
   align-items: center;
 }
 .form-register input{
-  display: flex;
   border: 1px solid #26262630;
-  border-radius: 2.5px;
+  border-radius: 2px;
   background-color: #26262605;
   font-size: 12px;
-  height: 2.5rem;
-  width: 16rem;
+  height: 3rem;
+  width: 22rem;
   margin: 3px;
   padding: 5px;
 }
@@ -146,10 +145,11 @@ body{
   align-items: center;
   justify-content: center;
   background-color: #0095f6;
-  border-radius: 5px;
   margin: 10px;
-  width: 16rem;
+  width: 22rem;
   padding: 5px;
+  height: 2.5rem;
+  border-radius: 2.5px;
 }
 
 .submit-button {
@@ -157,24 +157,27 @@ body{
   background-color: transparent;
   color: #fff;
   font-weight: 600;
+  font-size: 12px;
 }
 
 .terms-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5px;
   padding: 10px;
 }
 
-.terms-policy {
+.terms-policy, .know-more {
   color: #2626266f;
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 14px;
+  margin-bottom: 10px;
 }
 
-.terms-policy span{
+.terms-policy span , .know-more span{
   font-weight: 700;
 }
 
@@ -226,6 +229,7 @@ body{
  .footer-container {
    display: flex;
    flex-direction: column;
+   font-weight: 400;
    margin-bottom: 30px;
  }
 
@@ -239,7 +243,6 @@ body{
  .row-1 a{
   color: #2626268c;
   font-size: 12px;
-  font-weight: 400;
   margin: 5px;
 }
 
@@ -248,15 +251,56 @@ body{
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 
-.lang-option, .copy{
+.row-2 p{
   color: #2626268c;
   font-size: 12px;
-  font-weight: 400;
   margin: 10px;
 }
 
-/*@Media Queries */
 
+/* @Media Queries */
+@media (min-width: 280px) and (max-width: 450px) {
+  .instagram-form {
+    margin: 0;
+    width: 100%;
+  }
+
+  .group-container {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .instagram-logo {
+    margin: 0 0 10px;
+    padding: 10px 0;
+  }
+  .instagram-logo img{
+    max-width: 16rem;
+  }
+
+  .cad-text {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .divider p {
+    font-weight: 600;
+  }
+
+  .terms-policy {
+    font-size: 10px;
+  }
+
+  .row-1 a, .row-2{
+    font-size: 12px;
+  }
+
+  .row-2 {
+    font-weight: 400;
+  }
+}
